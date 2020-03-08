@@ -11,15 +11,16 @@ public class Main {
         System.out.println("FibonacciHeap Test\n\n");
         FibHeap fh = new FibHeap();
         char ch;
-        /**  Perform FibonacciHeap operations  **/
+        String ipFile = "input_1000.txt";
+        /*  Perform FibonacciHeap operations  */
 
-        File f = new File("input.txt");
+        File f = new File(ipFile);
         try {
             Boolean empty = fh.isEmpty();
             BufferedReader b = new BufferedReader(new FileReader(f));
-            HashMap<String, FibNode> hashtagMap = new HashMap<String, FibNode>();
+            HashMap<String, FibNode> hashtagMap = new HashMap<>();
             String ip;
-            Boolean read = true;
+            boolean read = true;
             while ((ip = b.readLine()) != null && read) {
                 if (ip.equals("stop")) {
                     read = false;
@@ -38,7 +39,7 @@ public class Main {
                 }
                 else {
                     List<String> op =  fh.extractMax(Integer.parseInt(ip));
-                    System.out.print(op);
+                    System.out.print(op + "\n");
 
                     writeToFile(String.join(" ", op));
                     for(String tag : op){
@@ -46,8 +47,6 @@ public class Main {
                     }
                 }
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

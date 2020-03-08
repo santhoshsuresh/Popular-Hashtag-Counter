@@ -128,30 +128,14 @@ public class FibHeap {
                 }
                 nextNode = nextNode.right;
             }
+            currentNode = currentNode.right;
             nextNode = nextNode.right;
         }while(currentNode != nextNode);
     }
 
-//    public void checkPairs(){
-//        FibNode currentNode, nextNode;
-//        currentNode = root;
-//        nextNode = root.right;
-//        do{
-//            while(currentNode != nextNode){
-//                if(currentNode.children.size() == nextNode.children.size()){
-//                    currentNode = pairwiseCombine(currentNode, nextNode);
-//                    nextNode = currentNode;
-//                }
-//                nextNode = nextNode.right;
-//            }
-//            currentNode = currentNode.right;
-//            nextNode = currentNode.right;
-//        } while(root != currentNode);
-//    }
-//
-    private FibNode pairwiseCombine(FibNode node1, FibNode node2) {
+    public FibNode pairwiseCombine(FibNode node1, FibNode node2){
         FibNode minNode, maxNode;
-        if(node1.key > node2.key){
+        if(node1.key >= node2.key){
             minNode = node2;
             maxNode = node1;
         }
@@ -159,32 +143,21 @@ public class FibHeap {
             minNode = node1;
             maxNode = node2;
         }
-
-        assignNeighbours(minNode, maxNode);
+        connectNodes(minNode.left, minNode.right);
+        int childCount = root.children.size();
+        if(childCount > 0){
+            FibNode leftMostChild = maxNode.children.get(0);
+            FibNode rightMostChild = maxNode.children.get(childCount-1);
+            connectNodes(rightMostChild, minNode);
+            connectNodes(minNode, leftMostChild);
+        }
+        else{
+            connectNodes(minNode, minNode);
+        }
         maxNode.children.add(minNode);
         minNode.parent = maxNode;
         heapcount--;
-
         return maxNode;
-    }
-
-    public void assignNeighbours(FibNode minNode, FibNode maxNode){
-        FibNode minLeft = minNode.left;
-        FibNode minRight = minNode.right;
-        minLeft.right = minRight;
-        minRight.left = minLeft;
-
-        int count = maxNode.children.size();
-        if(count > 0){
-            minNode.left = maxNode.children.get(count-1);
-            minNode.right = maxNode.children.get(0);
-            maxNode.children.get(count-1).right = minNode;
-            maxNode.children.get(0).left = minNode;
-        }
-        else{
-            minNode.left = minNode;
-            minNode.right = minNode;
-        }
     }
 
     public void connectToHeap(FibNode node1, FibNode node2){
