@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="257bfb4d-9050-4e7a-aeea-9d52aead08c5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y8VR1qi96mbvP6I4mFDLWru4VR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="FibonacciHeapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.FibonacciHeapTest" />
+      <module name="hashtagcounter" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="hashtagcounter" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.FibonacciHeapTest" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FibonacciHeapTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="257bfb4d-9050-4e7a-aeea-9d52aead08c5" name="Default Changelist" comment="" />
+      <created>1582324197839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582324197839</updated>
+      <workItem from="1582324203657" duration="1443000" />
+      <workItem from="1583086243853" duration="9527000" />
+      <workItem from="1583250715637" duration="2669000" />
+      <workItem from="1583440722552" duration="3179000" />
+      <workItem from="1583444096396" duration="9948000" />
+      <workItem from="1583454463693" duration="1268000" />
+      <workItem from="1583455753807" duration="6451000" />
+      <workItem from="1583470911897" duration="3000" />
+      <workItem from="1583471868585" duration="9266000" />
+      <workItem from="1583549554842" duration="10417000" />
+      <workItem from="1583560076982" duration="4672000" />
+      <workItem from="1583641461102" duration="4000" />
+      <workItem from="1583641535979" duration="5865000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583454818157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583454818157" />
+    <state x="596" y="255" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1583455340758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="596" y="255" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.0.1536.824@0.0.1536.824" timestamp="1583455340758" />
+    <state x="568" y="243" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1583459605110">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="568" y="243" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1536.824@0.0.1536.824" timestamp="1583459605110" />
+    <state x="485" y="131" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1583460747229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="131" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1583460747229" />
+    <state x="524" y="115" key="#xdebugger.evaluate" timestamp="1583441333346">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1583441333346" />
+    <state width="438" height="466" key="DebuggerActiveHint" timestamp="1583552650757">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="438" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1583552650757" />
+    <state x="549" y="130" key="FileChooserDialogImpl" timestamp="1583455524093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="130" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583455524093" />
+    <state width="1515" height="287" key="GridCell.Tab.0.bottom" timestamp="1583644553381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583644553381" />
+    <state width="1515" height="287" key="GridCell.Tab.0.center" timestamp="1583644553381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583644553381" />
+    <state width="1515" height="287" key="GridCell.Tab.0.left" timestamp="1583644553381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583644553381" />
+    <state width="1515" height="287" key="GridCell.Tab.0.right" timestamp="1583644553381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583644553381" />
+    <state width="1515" height="287" key="GridCell.Tab.1.bottom" timestamp="1583644553447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583644553447" />
+    <state width="1515" height="287" key="GridCell.Tab.1.center" timestamp="1583644553447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583644553447" />
+    <state width="1515" height="287" key="GridCell.Tab.1.left" timestamp="1583644553447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583644553447" />
+    <state width="1515" height="287" key="GridCell.Tab.1.right" timestamp="1583644553447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="287" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583644553447" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1583560455198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583560455198" />
+    <state x="470" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583641537454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583641537454" />
+    <state x="330" y="148" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583562871294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="330" y="148" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1583562871294" />
+    <state x="407" y="33" key="new project wizard" timestamp="1583455562453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1583455562453" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583560463280">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583560463280" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="i==7" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/com/company/FibHeap.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
