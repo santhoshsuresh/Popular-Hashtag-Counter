@@ -11,7 +11,7 @@ public class Main {
         System.out.println("FibonacciHeap Test\n\n");
         FibHeap fh = new FibHeap();
         char ch;
-        String ipFile = "input_1000.txt";
+        String ipFile = "input.txt";
         /*  Perform FibonacciHeap operations  */
 
         File f = new File(ipFile);
@@ -22,7 +22,7 @@ public class Main {
             String ip;
             boolean read = true;
             while ((ip = b.readLine()) != null && read) {
-                if (ip.equals("stop")) {
+                if (ip.toLowerCase().equals("stop")) {
                     read = false;
                 }
                 else if (ip.charAt(0) == '#') {
