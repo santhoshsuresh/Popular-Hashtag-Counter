@@ -21,7 +21,7 @@ public class Main {
             String ip;
             Boolean read = true;
             while ((ip = b.readLine()) != null && read) {
-                if (ip == "stop") {
+                if (ip.equals("stop")) {
                     read = false;
                 }
                 else if (ip.charAt(0) == '#') {

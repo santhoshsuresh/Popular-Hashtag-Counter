@@ -87,73 +87,68 @@ public class FibHeap {
     }
 
     public String removeMax(){
+        heapcount--;
+        FibNode parent = root;
         if(root.children.size() == 0 && heapcount>1){
             connectNodes(root.left, root.right);
             root = root.right;
         }
         else if(root.children.size() > 0){
-
-
+            insertChildrenToHeap();
         }
-    }
 
-//    public String removeMax(){
-//        FibNode parentNode = root;
-//        if(root.children.size() > 0){
-//            int len = root.children.size();
-//            for(FibNode child : root.children){
-//               child.parent = null;
-//               insertToHeap(root.left, child, root.right);
-//            }
-//            heapcount += root.children.size() - 1;
-//            root.children.clear();
-//        }
-//        else{
-//            root.right.left = root.left;
-//            root.left.right = root.right;
-//            heapcount--;
-//        }
-//
-//        FibNode currentNode = root.right;
-//        FibNode nextNode = currentNode.right;
-//        root = currentNode;
-//        while(nextNode != currentNode){
-//            if(nextNode.key > root.key){
-//                root = nextNode;
-//            }
-//            nextNode = nextNode.right;
-//        }
-//
-//        if(heapcount > 1){
-//            checkPairs();
-//        }
-//
-//        parentNode.left = null;
-//        parentNode.right = null;
-//        return parentNode.hashtag;
-//    }
+        FibNode currenetNode = root;
+        FibNode nextNode = root.right;
+        while(currenetNode != nextNode){
+            if(nextNode.key > root.key)
+                root = nextNode;
+            nextNode = nextNode.right;
+        }
+
+        if(heapcount > 1)
+            checkPairs();
+
+        parent.left = null;
+        parent.right = null;
+        return parent.hashtag;
+    }
 
     public Boolean isEmpty(){
         return (root == null);
     }
 
     public void checkPairs(){
-        FibNode currentNode, nextNode;
-        currentNode = root;
-        nextNode = root.right;
+        FibNode currentNode = root;
+        FibNode nextNode = root.right;
         do{
-            while(currentNode != nextNode){
+            while (currentNode != nextNode){
                 if(currentNode.children.size() == nextNode.children.size()){
                     currentNode = pairwiseCombine(currentNode, nextNode);
                     nextNode = currentNode;
                 }
                 nextNode = nextNode.right;
             }
-            currentNode = currentNode.right;
-            nextNode = currentNode.right;
-        } while(root != currentNode);
+            nextNode = nextNode.right;
+        }while(currentNode != nextNode);
     }
 
+//    public void checkPairs(){
+//        FibNode currentNode, nextNode;
+//        currentNode = root;
+//        nextNode = root.right;
+//        do{
+//            while(currentNode != nextNode){
+//                if(currentNode.children.size() == nextNode.children.size()){
+//                    currentNode = pairwiseCombine(currentNode, nextNode);
+//                    nextNode = currentNode;
+//                }
+//                nextNode = nextNode.right;
+//            }
+//            currentNode = currentNode.right;
+//            nextNode = currentNode.right;
+//        } while(root != currentNode);
+//    }
+//
     private FibNode pairwiseCombine(FibNode node1, FibNode node2) {
         FibNode minNode, maxNode;
         if(node1.key > node2.key){
@@ -199,13 +194,6 @@ public class FibHeap {
         node2.left = node1;
     }
 
-//    public void insertToHeap(FibNode leftNode, FibNode newNode, FibNode rightNode){
-//        newNode.right = rightNode;
-//        newNode.left = leftNode;
-//        leftNode.right = newNode;
-//        rightNode.left = newNode;
-//    }
-
     public void insertChildrenToHeap(){
         FibNode parent = root;
         int childCount = root.children.size();
@@ -223,8 +211,9 @@ public class FibHeap {
             connectNodes(root.left, root.children.get(0));
             connectNodes(root.children.get(childCount-1), root.right);
         }
-        root.children.clear();
         root = parent.children.get(0);
+        parent.children.clear();
+        heapcount += childCount;
     }
 
     public void connectNodes(FibNode leftNode, FibNode rightNode){
