@@ -8,10 +8,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
     // write your code here
-        System.out.println("FibonacciHeap Test\n\n");
+        System.out.println("FibonacciHeap Test\n");
         FibHeap fh = new FibHeap();
         char ch;
-        String ipFile = "input.txt";
+
+        String ipFile = args[0] + ".txt";
         /*  Perform FibonacciHeap operations  */
 
         File f = new File(ipFile);
