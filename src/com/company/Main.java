@@ -12,7 +12,7 @@ public class Main {
         FibHeap fh = new FibHeap();
         char ch;
 
-        String ipFile = args[0] + ".txt";
+        String ipFile = "input.txt";
         /*  Perform FibonacciHeap operations  */
 
         File f = new File(ipFile);

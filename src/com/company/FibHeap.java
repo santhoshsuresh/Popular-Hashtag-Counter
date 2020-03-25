@@ -42,26 +42,25 @@ public class FibHeap {
 
     public void increaseKey(FibNode element, int key) {
         element.key += key;
-        if((element.parent == null) || (element.key < element.parent.key)){
-            if(element.key > root.key){
-                root = element;
-            }
+        if((element.parent == null) && element.key > root.key){
+            root = element;
         }
-        else if(element.parent != null){
+        else if(element.parent != null && element.key > element.parent.key){
             FibNode parent = element.parent;
             removeChildAndParent(element, parent);
-            parent.childCut = !parent.childCut;
-            if(!parent.childCut)
+            if(parent.childCut)
                 cascadeCut(parent);
+            else
+                parent.childCut = true;
         }
     }
 
     public void cascadeCut(FibNode node){
         while (node.parent!=null && node.childCut){
             FibNode parent = node.parent;
-            removeChildAndParent(node, node.parent);
+            removeChildAndParent(node, parent);
             connectToHeap(root, node);
-            node.childCut = !node.childCut;
+            node.childCut = false;
             node = parent;
         }
     }
